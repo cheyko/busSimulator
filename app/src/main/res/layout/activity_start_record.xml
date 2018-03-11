@@ -12,10 +12,10 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="56dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:text="end recording"
+        android:layout_marginStart="64dp"
+        android:text="Final Stop"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -65,5 +65,23 @@
         app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:layout_marginEnd="48dp"
+        android:text="Bus-Stop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ListView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/button2"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="12dp"
+    android:id="@+id/listview1"/>
 
 </android.support.constraint.ConstraintLayout>
