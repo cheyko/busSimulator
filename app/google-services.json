@@ -1,0 +1,50 @@
+{
+  "project_info": {
+    "project_number": "955256764216",
+    "firebase_url": "https://fir-bussimulator.firebaseio.com",
+    "project_id": "firebase-bussimulator",
+    "storage_bucket": "firebase-bussimulator.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:955256764216:android:85a58281ef9edf66",
+        "android_client_info": {
+          "package_name": "com.busey.bussimulator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "955256764216-0lrh8lmhq7mrfkoj9t3m8mhqlo8oa6vi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.busey.bussimulator",
+            "certificate_hash": "f6c7b0bf21330dbcf40d97db275a2122966c70a5"
+          }
+        },
+        {
+          "client_id": "955256764216-98sjatjqc42an4ms0l6adbtq8ekngtbk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIo4hWsED4PfZ0DkV0DDRs1rG6b7eWdmc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
