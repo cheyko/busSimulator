@@ -7,12 +7,6 @@ import android.content.Context;
 //import android.location.LocationListener;
 import android.os.Handler;
 import android.os.SystemClock;
-//import android.support.v4.app.ActivityCompat;
-import android.provider.Settings;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -63,7 +57,7 @@ public class StartRecordActivity extends AppCompatActivity {
     public List<RouteTrip> scheduleList;
     ArrayAdapter<String> adapter ;
 
-    ArrayList<Coordinates> bCoordinates,finalCoordinates ;
+    ArrayList<Coordinates> bCoordinates;
 
     DatabaseReference theDatabase, routeRef, scheduleRef;
 
@@ -109,28 +103,7 @@ public class StartRecordActivity extends AppCompatActivity {
 
         routeRef = FirebaseDatabase.getInstance().getReference("routes");
         scheduleRef = FirebaseDatabase.getInstance().getReference("schedule");
-        /*
-        finalCoordinates = new ArrayList<>(Arrays.asList(new Coordinates("18.0121653036","-76.7980285616"),
-                new Coordinates("18.020930","-76.770731"),  new Coordinates("18.015291","-76.742382"),
-                new Coordinates("18.005855","-76.741891") ));
 
-        Displacements start = new Displacements(73, currentTime, finalCoordinates.get(0),0);
-        Displacements chkpnt1 = new Displacements(73, currentTime, finalCoordinates.get(1),1);
-        Displacements chkpnt2 = new Displacements(73, currentTime, finalCoordinates.get(2),2);
-        Displacements end = new Displacements(73, currentTime, finalCoordinates.get(3),3);
-
-        String id_1 = routeRef.push().getKey();
-        routeRef.child(id_1).setValue(start);
-
-        String id_2 = routeRef.push().getKey();
-        routeRef.child(id_2).setValue(chkpnt1);
-
-        String id_3 = routeRef.push().getKey();
-        routeRef.child(id_3).setValue(chkpnt2);
-
-        String id_4 = routeRef.push().getKey();
-        routeRef.child(id_4).setValue(end);
-*/
         int bus = 73, time = 600;
         double busDist = 7245;
 
